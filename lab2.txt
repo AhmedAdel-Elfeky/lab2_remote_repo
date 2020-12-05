@@ -1,0 +1,76 @@
+● Create a new project on your local machine then push it to your
+remote repo.
+
+mkdir lab2_repo
+cd lab2_repo/
+git init
+touch f1
+git add f1
+git commit -m "adding f1"
+//make remote repo on github
+git branch -M main
+git remote add origin 		git@github.com:AhmedAdel-Elfeky/lab2_remote_repo.git
+git push -u origin main
+
+● create two branches (dev and test) then create two files in dev
+branch and push this changes to remote repo.
+
+git branch dev
+git branch test
+git checkout dev
+touch fdev1
+touch fdev2
+git add .
+git commit -m "add new dev branch"
+git push origin dev
+git checkout test
+git push origin test
+
+● merge this changes on main branch and then push it to your
+remote main branch.
+
+git checkout main
+git merge dev 
+git push origin main 
+
+
+● Tell me how to remove them locally and remotly.
+	Locally:
+	git checkout main
+	git branch -d dev
+	git branch -D test
+	remotly:
+	git push origin :dev
+	git push origin :test
+● Send me invitation on my mail. 
+	Ok
+● create an annoted tag with tagname v1.4.
+	
+	git tag -a v1.4 -m "version 1.4"
+
+● push it to remote server.
+	
+	git push origin --follow-tags	
+	
+● tell me how to list tags locally.
+	git tag
+● tell me how to delete tag locally and remotely.
+	Locally:
+	git tag -d v1.4
+	remotely:
+	git push origin --delete v1.4
+
+● What is git rebase? Give me an example.
+	
+rebase is moving a commit to new parent 
+rebase is a merge can make (merge conflict)
+
+
+
+● pull request.
+	Pull request l:
+		when you make a local branch then push it to the remote repository. It will be in the pull request and the admin will confirm it and make merge or not.
+	Pull request ll:
+		when you fork a remote repository you have two remote repositories one the main and the second is forked when you change in the forked and make new branch the you push this new branch to the admin and he accepts it or not. If accept it will be merged. 
+
+● README.md file. Add image at the end of README.md file	
