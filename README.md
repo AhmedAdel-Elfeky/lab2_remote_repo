@@ -13,9 +13,9 @@ pip install foobar
 ```python
 import foobar
 
-foobar.pluraliza('word') \# returns 'words'
-foobar.pluraliza('goose') \# returns 'geese'
-foobar.singularize('phenomena') \# returns 'phrnomenon'
+foobar.pluraliza('word') # returns 'words'
+foobar.pluraliza('goose') # returns 'geese'
+foobar.singularize('phenomena') # returns 'phrnomenon'
 ```
 # Contributing 
 Pull requests are welecome. For major changes, please open issue first to discuss what you
